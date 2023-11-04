@@ -1,0 +1,53 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Power Up",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Select a Power Up",
+      "UUID": "com.dekirai.pangya.powerup",
+      "PropertyInspectorPath": "PropertyInspector/powerup.html"
+    },
+    {
+      "Icon": "Images/icon",
+      "Name": "Spin",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Adjust your spin with ease",
+      "UUID": "com.dekirai.pangya.spin",
+      "PropertyInspectorPath": "PropertyInspector/spin.html"
+    }
+  ],
+  "Author": "Dekirai",
+  "Name": "com.dekirai.pangya",
+  "Description": "Hack PangYa using StreamDeck!",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://dekirai.crygod.de/",
+  "Version": "1.1",
+  "CodePath": "com.dekirai.pangya",
+  "Category": "[Dekirai] PangYa S4.9",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
+}

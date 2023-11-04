@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>PangYa Spin Adjustment</title>
+    <link rel="stylesheet" href="sdpi.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Spin</div>
+            <select class="sdpi-item-value select sdProperty" id="spin" oninput="setSettings()">
+                <option value="0x00 0x00 0xE0 0x40">7 Spin Down</option>
+                <option value="0x00 0x00 0xE0 0xC0">7 Spin Up</option>
+                <option value="0x00 0x00 0x10 0x41">9 Spin Down</option>
+                <option value="0x00 0x00 0x10 0xC1">9 Spin Up</option>
+                <option value="0x00 0x00 0xFE 0x42">Soaring</option>
+            </select>
+        </div>
+    </div>
+    <script src="sdtools.common.js"></script>
+</body>
+</html>

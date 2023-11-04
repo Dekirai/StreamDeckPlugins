@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>PangYa Power Up Selector</title>
+    <link rel="stylesheet" href="sdpi.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Item</div>
+            <select class="sdpi-item-value select sdProperty" id="item" oninput="setSettings()">
+                <option value="0x00">Spin Mastery</option>
+                <option value="0x01">Curve Mastery</option>
+                <option value="0x02">Duostar Lucky Pangya</option>
+                <option value="0x03">Duostar Nerve Stabilizer</option>
+                <option value="0x04">Strength Boost</option>
+                <option value="0x05">Miracle Omen</option>
+                <option value="0x06">Silent Wind</option>
+                <option value="0x07">Generic Lucky Pangya</option>
+                <option value="0x08">Generic Nerve Stabilizer</option>
+                <option value="0x09">Power Calliper</option>
+            </select>
+        </div>
+    </div>
+    <script src="sdtools.common.js"></script>
+</body>
+</html>
