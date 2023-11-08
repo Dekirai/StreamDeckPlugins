@@ -7,8 +7,8 @@ using System.Xml.Linq;
 
 namespace com.dekirai.pangya
 {
-    [PluginActionId("com.dekirai.pangya.powerup")]
-    public class PowerUp : PluginBase
+    [PluginActionId("com.dekirai.pangya.cheats")]
+    public class Cheats : PluginBase
     {
         private class PluginSettings
         {
@@ -17,8 +17,8 @@ namespace com.dekirai.pangya
                 return new PluginSettings();
             }
 
-            [JsonProperty(PropertyName = "item")]
-            public string Item { get; set; }
+            [JsonProperty(PropertyName = "cheats")]
+            public string Cheats { get; set; }
 
             [FilenameProperty]
             [JsonProperty(PropertyName = "pangyaCheats")]
@@ -33,7 +33,7 @@ namespace com.dekirai.pangya
         private PluginSettings settings;
 
         #endregion
-        public PowerUp(SDConnection connection, InitialPayload payload) : base(connection, payload)
+        public Cheats(SDConnection connection, InitialPayload payload) : base(connection, payload)
         {
             if (payload.Settings == null || payload.Settings.Count == 0)
             {
@@ -54,7 +54,29 @@ namespace com.dekirai.pangya
         public override void KeyPressed(KeyPayload payload)
         {
             GetPID();
-            mem.WriteMemory("ProjectG.exe+133218,0x54,0x34,0x668,0x8,0x104,0xB8,0x4B0", "bytes", $"{Settings.Item} 0x00 0x00 0x18");
+            switch (Settings.Cheats)
+            {
+                case "0": // Always Pangya ON
+                    mem.WriteMemory("ProjectG.exe+43530", "bytes", $"0x00 0x89 0x88 0xE4 0x00 0x00 0x00 0x8B 0x15 0x20");
+                    break;
+                case "1": // Always Pangya OFF
+                    mem.WriteMemory("ProjectG.exe+43530", "bytes", $"0x00 0x89 0x88 0xD4 0x00 0x00 0x00 0x8B 0x15 0x20");
+                    break;
+                case "2": // Skip Shot
+                    mem.WriteMemory("ProjectG.exe+670558", "byte", $"0x01");
+                    break;
+                case "3": // Room Crasher
+                    mem.WriteMemory("ProjectG.exe+69B108", "byte", $"0xFF");
+                    break;
+                case "4": // Teleport Ball to Hole
+                    float holeX = mem.ReadFloat("ProjectG.exe+71F33C");
+                    float holeY = mem.ReadFloat("ProjectG.exe+71F340");
+                    float holeZ = mem.ReadFloat("ProjectG.exe+71F344");
+                    mem.WriteMemory("ProjectG.exe+670540", "float", $"{holeX}");
+                    mem.WriteMemory("ProjectG.exe+670544", "float", $"{holeY}");
+                    mem.WriteMemory("ProjectG.exe+670548", "float", $"{holeZ}");
+                    break;
+            }
         }
 
         public override void KeyReleased(KeyPayload payload) { }
