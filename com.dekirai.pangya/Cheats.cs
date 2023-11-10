@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using Memory;
 using System.Xml.Linq;
+using System.Diagnostics;
 
 namespace com.dekirai.pangya
 {
@@ -63,18 +64,18 @@ namespace com.dekirai.pangya
                     mem.WriteMemory("ProjectG.exe+43530", "bytes", $"0x00 0x89 0x88 0xD4 0x00 0x00 0x00 0x8B 0x15 0x20");
                     break;
                 case "2": // Skip Shot
-                    mem.WriteMemory("ProjectG.exe+670558", "byte", $"0x01");
+                    mem.WriteMemory("ProjectG.exe+670558", "byte", $"0x00");
                     break;
                 case "3": // Room Crasher
                     mem.WriteMemory("ProjectG.exe+69B108", "byte", $"0xFF");
                     break;
                 case "4": // Teleport Ball to Hole
-                    float holeX = mem.ReadFloat("ProjectG.exe+71F33C");
-                    float holeY = mem.ReadFloat("ProjectG.exe+71F340");
-                    float holeZ = mem.ReadFloat("ProjectG.exe+71F344");
-                    mem.WriteMemory("ProjectG.exe+670540", "float", $"{holeX}");
-                    mem.WriteMemory("ProjectG.exe+670544", "float", $"{holeY}");
-                    mem.WriteMemory("ProjectG.exe+670548", "float", $"{holeZ}");
+                    byte[] holex = mem.ReadBytes($"ProjectG.exe+71F33C", 4);
+                    byte[] holey = mem.ReadBytes($"ProjectG.exe+71F340", 4);
+                    byte[] holez = mem.ReadBytes($"ProjectG.exe+71F344", 4);
+                    mem.WriteMemory($"ProjectG.exe+670540", "bytes", $"0x{holex[0].ToString("X")} 0x{holex[1].ToString("X")} 0x{holex[2].ToString("X")} 0x{holex[3].ToString("X")}");
+                    mem.WriteMemory($"ProjectG.exe+670544", "bytes", $"0x{holey[0].ToString("X")} 0x{holey[1].ToString("X")} 0x{holey[2].ToString("X")} 0x{holey[3].ToString("X")}");
+                    mem.WriteMemory($"ProjectG.exe+670548", "bytes", $"0x{holez[0].ToString("X")} 0x{holez[1].ToString("X")} 0x{holez[2].ToString("X")} 0x{holez[3].ToString("X")}");
                     break;
             }
         }
