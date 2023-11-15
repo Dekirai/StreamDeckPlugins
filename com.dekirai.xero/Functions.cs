@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
-using Memory;
 using System.Xml.Linq;
 using System.Diagnostics;
 using System.Threading;
@@ -33,7 +32,6 @@ namespace com.dekirai.xero
         }
 
         private readonly PluginSettings Settings;
-        public static Mem mem = new Mem();
 
         #region Private Members
 
@@ -60,7 +58,6 @@ namespace com.dekirai.xero
 
         public override void KeyPressed(KeyPayload payload)
         {
-            GetPID();
             string processName = "xerogame";
             Process[] processes = Process.GetProcessesByName(processName);
             Process xeroGameProcess = processes[0];
@@ -104,14 +101,6 @@ namespace com.dekirai.xero
 
             // Return fixed filename back to the Property Inspector
             await Connection.SetSettingsAsync(JObject.FromObject(Settings)).ConfigureAwait(false);
-        }
-
-        private void GetPID()
-        {
-            int pid = mem.GetProcIdFromName("ProjectG");
-            bool openProc = false;
-
-            if (pid > 0) openProc = mem.OpenProcess(pid);
         }
 
         public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload) { }
