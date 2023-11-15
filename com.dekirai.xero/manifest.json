@@ -1,37 +1,38 @@
-﻿{
-   "Actions":[
+{
+  "Actions": [
     {
-      "Icon": "assets/xero",
-      "Name": "Test",
+      "Icon": "Images/icon",
+      "Name": "Functions",
       "States": [
         {
-          "Image": "assets/xero",
+          "Image": "Images/pluginAction",
           "TitleAlignment": "middle",
-          "FontSize": "18"
+          "FontSize": "12"
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "Test",
-      "UUID": "com.dekirai.xero.test"
+      "Tooltip": "Select a Function",
+      "UUID": "com.dekirai.xero.functions",
+      "PropertyInspectorPath": "PropertyInspector/functions.html"
     }
-   ],
-   "SDKVersion":2,
-   "Author":"Dekirai",
-   "CodePath":"com.dekirai.xero.exe",
-   "Description":"Functions for Xero.",
-   "Category":"[Dekirai] Xero",
-   "CategoryIcon":"assets/xero_alt",
-   "Name":"[Dekirai] Xero",
-   "Icon":"assets/xero",
-   "URL":"",
-   "Version":"1.0",
-   "OS":[
-      {
-         "Platform":"windows",
-         "MinimumVersion":"10"
-      }
-   ],
-   "Software":{
-      "MinimumVersion":"5.0"
-   }
+  ],
+  "Author": "Dekirai",
+  "Name": "com.dekirai.xero",
+  "Description": "Control Xero using StreamDeck!",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://dekirai.crygod.de/",
+  "Version": "1.0",
+  "CodePath": "com.dekirai.xero",
+  "Category": "[Dekirai] Xero",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
 }
