@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Form Selector</title>
+    <link rel="stylesheet" href="sdpi.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Select an option</div>
+            <select class="sdpi-item-value select sdProperty" id="refills" oninput="setSettings()">
+                <option value="0">Refill HP</option>
+                <option value="1">Refill MP</option>
+                <option value="2">Refill Drive</option>
+                <option value="3">Refill Drive Duration</option>
+            </select>
+        </div>
+    </div>
+    <script src="sdtools.common.js"></script>
+</body>
+</html>

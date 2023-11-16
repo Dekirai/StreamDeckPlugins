@@ -1,0 +1,53 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Forms",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Trigger any Drive Form with ease",
+      "UUID": "com.dekirai.kingdomheartsii.forms",
+      "PropertyInspectorPath": "PropertyInspector/Forms.html"
+    },
+    {
+      "Icon": "Images/refillsIcon",
+      "Name": "Refills",
+      "States": [
+        {
+          "Image": "Images/refillsAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Refill your needs",
+      "UUID": "com.dekirai.kingdomheartsii.refills",
+      "PropertyInspectorPath": "PropertyInspector/Refills.html"
+    }
+  ],
+  "Author": "Dekirai",
+  "Name": "com.dekirai.kingdomheartsii",
+  "Description": "Kingdom Hearts II with Stream Deck",
+  "Icon": "Images/pluginIcon",
+  "URL": "",
+  "Version": "1.2",
+  "CodePath": "com.dekirai.kingdomheartsii",
+  "Category": "[Dekirai] Kingdom Hearts II",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
+}
