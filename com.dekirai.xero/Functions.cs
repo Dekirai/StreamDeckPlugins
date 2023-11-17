@@ -61,6 +61,11 @@ namespace com.dekirai.xero
             string processName = "xerogame";
             Process[] processes = Process.GetProcessesByName(processName);
             Process xeroGameProcess = processes[0];
+            if (processes.Length == 0)
+            {
+                Connection.ShowAlert();
+                return;
+            }
             IntPtr mainWindowHandle = xeroGameProcess.MainWindowHandle;
             SetForegroundWindow(mainWindowHandle);
             Thread.Sleep(450);
