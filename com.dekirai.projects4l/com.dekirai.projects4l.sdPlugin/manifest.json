@@ -1,0 +1,53 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Instant Actions",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Commands that won't require further input",
+      "UUID": "com.dekirai.projects4l.instantactions",
+      "PropertyInspectorPath": "PropertyInspector/InstantActions.html"
+    },
+    {
+      "Icon": "Images/icon",
+      "Name": "Presets",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Send items with ease",
+      "UUID": "com.dekirai.projects4l.presets",
+      "PropertyInspectorPath": "PropertyInspector/Presets.html"
+    }
+  ],
+  "Author": "Dekirai",
+  "Name": "com.dekirai.projects4l",
+  "Description": "Execute GM Commands with ease",
+  "Icon": "Images/pluginIcon",
+  "URL": "",
+  "Version": "1.0",
+  "CodePath": "com.dekirai.projects4l",
+  "Category": "[Dekirai] Project S4 League",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
+}

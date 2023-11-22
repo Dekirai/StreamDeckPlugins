@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Presets</title>
+    <link rel="stylesheet" href="sdpi.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Presets</div>
+            <select class="sdpi-item-value select sdProperty" id="preset" oninput="setSettings()">
+                <option value="0">GM Set (Male)</option>
+                <option value="1">SST Weapons</option>
+            </select>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Nickname</div>
+            <input class="sdpi-item-value sdProperty" value="" id="nickname" oninput="setSettings()">
+        </div>
+    </div>
+    <div><p>To make it work, join a room and enter a long text first</p></div>
+    <div><p>For example "dwahdiowahdoiawhdioahwiodhaioda"</p></div>
+    <div><p>After that, you can use the functions (ROOM ONLY)</p></div>
+    <script src="sdtools.common.js"></script>
+</body>
+</html>

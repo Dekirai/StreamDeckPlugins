@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Instant Actions</title>
+    <link rel="stylesheet" href="sdpi.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">InstantActions</div>
+            <select class="sdpi-item-value select sdProperty" id="instantactions" oninput="setSettings()">
+                <option value="To server : game state StartResult">Start Result</option>
+                <option value="To server : game state StartHalfTime">Start Halftime</option>
+                <option value="To server : game state StartPrepare">Start Prepare</option>
+            </select>
+        </div>
+        <div><p>To make it work, join a room and enter a long text first</p></div>
+        <div><p>For example "dwahdiowahdoiawhdioahwiodhaioda"</p></div>
+        <div><p>After that, you can use the functions (ROOM ONLY)</p></div>
+    </div>
+    <script src="sdtools.common.js"></script>
+</body>
+</html>
