@@ -81,14 +81,56 @@ namespace com.dekirai.xero
                 case "1":
                     // Simulate key presses
                     SendKeys.SendWait("{F11}");
-                    SendKeys.SendWait("pos");
+                    SendKeys.SendWait("p");
                     SendKeys.SendWait("{Enter}");
                     SendKeys.SendWait("{F11}");
                     break;
                 case "2":
                     // Simulate key presses
                     SendKeys.SendWait("{F11}");
-                    SendKeys.SendWait("tp");
+                    SendKeys.SendWait("t");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "3":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("or");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "4":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("h");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "5":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("m");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "6":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("dnd");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "7":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("s");
+                    SendKeys.SendWait("{Enter}");
+                    SendKeys.SendWait("{F11}");
+                    break;
+                case "8":
+                    // Simulate key presses
+                    SendKeys.SendWait("{F11}");
+                    SendKeys.SendWait("st");
                     SendKeys.SendWait("{Enter}");
                     SendKeys.SendWait("{F11}");
                     break;
