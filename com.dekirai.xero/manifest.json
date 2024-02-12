@@ -21,7 +21,7 @@
   "Description": "Control Xero using StreamDeck!",
   "Icon": "Images/pluginIcon",
   "URL": "https://dekirai.crygod.de/",
-  "Version": "1.1",
+  "Version": "1.2",
   "CodePath": "com.dekirai.xero",
   "Category": "[Dekirai] Xero",
   "CategoryIcon": "Images/categoryIcon",
