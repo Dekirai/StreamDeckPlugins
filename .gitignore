@@ -22,6 +22,10 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Cc]om.dekirai.kingdomheartsii.sdPlugin/
+[Cc]om.dekirai.pangya.sdPlugin/
+[Cc]om.dekirai.projects4l.sdPlugin/
+[Cc]om.dekirai.xero.sdPlugin/
 
 # Visual Studio Code options directory
 .vscode/
@@ -274,27 +278,3 @@ __pycache__/
 
 .obj/
 .bin/
-com.dekirai.xero/com.dekirai.xero.sdPlugin/com.dekirai.xero.exe
-com.dekirai.xero/com.dekirai.xero.sdPlugin/com.dekirai.xero.exe.config
-com.dekirai.xero/com.dekirai.xero.sdPlugin/CommandLine.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/CommandLine.xml
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/categoryIcon.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/categoryIcon@2x.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/icon.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/icon@2x.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/pluginAction.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/pluginAction@2x.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/pluginIcon.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Images/pluginIcon@2x.png
-com.dekirai.xero/com.dekirai.xero.sdPlugin/manifest.json
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Newtonsoft.Json.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/Newtonsoft.Json.xml
-com.dekirai.xero/com.dekirai.xero.sdPlugin/NLog.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/NLog.xml
-com.dekirai.xero/com.dekirai.xero.sdPlugin/PropertyInspector/functions.html
-com.dekirai.xero/com.dekirai.xero.sdPlugin/PropertyInspector/sdpi.css
-com.dekirai.xero/com.dekirai.xero.sdPlugin/PropertyInspector/sdtools.common.js
-com.dekirai.xero/com.dekirai.xero.sdPlugin/streamdeck-client-csharp.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/StreamDeckTools.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/System.Drawing.Common.dll
-com.dekirai.xero/com.dekirai.xero.sdPlugin/System.Drawing.Common.xml
