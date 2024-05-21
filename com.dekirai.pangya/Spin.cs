@@ -53,7 +53,7 @@ namespace com.dekirai.pangya
         public override void KeyPressed(KeyPayload payload)
         {
             GetPID();
-            mem.WriteMemory("ProjectG.exe+7229D8,0x1C,0x34,0xC,0x14,0x30,0x0,0x24", "bytes", $"{Settings.Spin}");
+            mem.WriteMemory("ProjectG.exe+00A73E60,0x34,0x18,0xC,0x44,0x30,0x0,0x1C", "bytes", $"{Settings.Spin}");
         }
 
         public override void KeyReleased(KeyPayload payload) { }
