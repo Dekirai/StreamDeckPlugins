@@ -14,14 +14,29 @@
       "Tooltip": "Adjust your spin with ease",
       "UUID": "com.dekirai.pangya.spin",
       "PropertyInspectorPath": "PropertyInspector/spin.html"
+    },
+    {
+      "Icon": "Images/icon",
+      "Name": "Curve",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Adjust your curve with ease",
+      "UUID": "com.dekirai.pangya.curve",
+      "PropertyInspectorPath": "PropertyInspector/curve.html"
     }
   ],
   "Author": "Dekirai",
   "Name": "com.dekirai.pangya",
-  "Description": "Set your Spin using your StreamDeck!",
+  "Description": "Set your Spin/Curve using your StreamDeck!",
   "Icon": "Images/pluginIcon",
   "URL": "https://dekirai.crygod.de/",
-  "Version": "1.5",
+  "Version": "2.0",
   "CodePath": "com.dekirai.pangya",
   "Category": "[Dekirai] Pangya Reborn",
   "CategoryIcon": "Images/categoryIcon",

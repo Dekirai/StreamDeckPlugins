@@ -6,8 +6,8 @@ using Memory;
 
 namespace com.dekirai.pangya
 {
-    [PluginActionId("com.dekirai.pangya.spin")]
-    public class Spin : PluginBase
+    [PluginActionId("com.dekirai.pangya.curve")]
+    public class Curve : PluginBase
     {
         private class PluginSettings
         {
@@ -16,8 +16,8 @@ namespace com.dekirai.pangya
                 return new PluginSettings();
             }
 
-            [JsonProperty(PropertyName = "spin")]
-            public string Spin { get; set; }
+            [JsonProperty(PropertyName = "curve")]
+            public string Curve { get; set; }
 
             [FilenameProperty]
             [JsonProperty(PropertyName = "pangyaCheats")]
@@ -32,7 +32,7 @@ namespace com.dekirai.pangya
         private PluginSettings settings;
 
         #endregion
-        public Spin(SDConnection connection, InitialPayload payload) : base(connection, payload)
+        public Curve(SDConnection connection, InitialPayload payload) : base(connection, payload)
         {
             if (payload.Settings == null || payload.Settings.Count == 0)
             {
@@ -53,7 +53,7 @@ namespace com.dekirai.pangya
         public override void KeyPressed(KeyPayload payload)
         {
             GetPID();
-            mem.WriteMemory("ProjectG.exe+00A73E60,0x34,0x18,0xC,0x44,0x30,0x0,0x1C", "float", $"{Settings.Spin}");
+            mem.WriteMemory("ProjectG.exe+00A73E60,0x34,0x18,0xC,0x44,0x30,0x0,0x18", "float", $"{Settings.Curve}");
         }
 
         public override void KeyReleased(KeyPayload payload) { }
